@@ -38,9 +38,16 @@ Incendios forestales CyL: zonas de alto riesgo
   Interesting fields (criteria): 
 
 Sensibilidad ambiental aves planeadoras
-  Access: Downloadable shapefile
+  Access: Downloadable geopackage or shapefile
   Projection: EPSG:4326
   Resolution: 1:5000
+  License: IGCYL-NC
+  Interesting fields (criteria): 
+
+Sensibilidad ambiental flora
+  Access: Downloadable shapefile
+  Projection: EPSG:4326
+  Resolution: 1:10000
   License: IGCYL-NC
   Interesting fields (criteria): 
 
