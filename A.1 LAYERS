@@ -1,0 +1,55 @@
+Layers
+Land agricultural use 
+Land forestry cover  
+Flood plains
+
+Excl- Photovoltaics
+  Access: Downloadable geopackage
+  Projection: EPSG:4326
+  Resolution: 
+  License: IGCYL-NC
+  Interesting fields (criteria): 
+      Areas críticas de las especies protegidas 
+      Bienes de interés cultural 
+      Montes Arbolados 
+      Núcleos urbanos 
+      Red de Áreas Naturales Protegidas 
+      Zonas regables
+
+Red Natura 2000: ZEPA CyL
+  Access: Downloadable shapefile
+  Projection: EPSG:4326
+  Resolution: 1:50000
+  License: IGCYL-NC
+  Interesting fields (criteria): 
+
+Red Natura 2000: ZEC CyL
+  Access: Downloadable shapefile
+  Projection: EPSG:4326
+  Resolution: 1:10000
+  License: IGCYL-NC
+  Interesting fields (criteria): 
+
+Incendios forestales CyL: zonas de alto riesgo
+  Access: Downloadable geopackage or shapefile
+  Projection: EPSG:4326
+  Resolution: 1:25000
+  License: IGCYL-NC
+  Interesting fields (criteria): 
+
+Sensibilidad ambiental aves planeadoras
+  Access: Downloadable shapefile
+  Projection: EPSG:4326
+  Resolution: 1:5000
+  License: IGCYL-NC
+  Interesting fields (criteria): 
+
+
+ Vector data: 
+Topillo sighting 
+  Access: 
+  Projection: 
+  Resolution: 
+  License:
+
+  
