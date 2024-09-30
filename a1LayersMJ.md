@@ -14,7 +14,7 @@ Excl- Photovoltaics
       Montes Arbolados 
       Núcleos urbanos 
       Red de Áreas Naturales Protegidas 
-      Zonas regables (we could not access this directly in the visor but it is easy to isolate it from the main exc_foto file) 
+      Zonas regables (we could not access this directly in the JCyL visor but it is easy to isolate it from the main exc_foto file) 
 
 Red Natura 2000: ZEPA CyL
   Access: Downloadable shapefile
@@ -54,6 +54,27 @@ Sensibilidad ambiental flora
   License: IGCYL-NC
   Interesting fields (criteria): 
     all sensitivity was categorized as high and the areas were selected from exclusion from eolic and solar installations
+
+Hydrology and water bodies
+  Access: 
+  Projection: EPSG:4326
+  Resolution: 
+  License: IGCYL-NC
+  Interesting fields (criteria):
+
+Temperature
+  Access: 
+  Projection: EPSG:4326
+  Resolution: 
+  License: IGCYL-NC
+  Interesting fields (criteria):
+
+Precipitation
+  Access: 
+  Projection: EPSG:4326
+  Resolution: 
+  License: IGCYL-NC
+  Interesting fields (criteria):
 
  Vector data: 
 Topillo sighting 
