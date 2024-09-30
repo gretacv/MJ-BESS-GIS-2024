@@ -57,21 +57,21 @@ Sensibilidad ambiental flora
 
 Hydrology and water bodies
   Access: 
-  Projection: EPSG:4326
+  Projection: 
   Resolution: 
   License: IGCYL-NC
   Interesting fields (criteria):
 
 Temperature
   Access: 
-  Projection: EPSG:4326
+  Projection: 
   Resolution: 
   License: IGCYL-NC
   Interesting fields (criteria):
 
 Precipitation
   Access: 
-  Projection: EPSG:4326
+  Projection: 
   Resolution: 
   License: IGCYL-NC
   Interesting fields (criteria):
