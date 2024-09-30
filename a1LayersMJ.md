@@ -55,31 +55,31 @@ Sensibilidad ambiental flora
   Interesting fields (criteria): 
     all sensitivity was categorized as high and the areas were selected from exclusion from eolic and solar installations
 
-Hydrology and water bodies
-  Access: 
-  Projection: 
-  Resolution: 
+Riesgo electrocución aves CyL
+  Access: Downloadable shapefile and geopackage
+  Projection: EPSG:4326 
+  Resolution: 1:5000
   License: IGCYL-NC
   Interesting fields (criteria):
 
-Temperature
+Temperature and precipitation 
   Access: 
   Projection: 
   Resolution: 
-  License: IGCYL-NC
+  License: GADM NC
   Interesting fields (criteria):
 
-Precipitation
-  Access: 
-  Projection: 
-  Resolution: 
+SIGPAC CyL 2021: parcelas
+  Access: Downloadable shapefile
+  Projection: EPSG:4326
+  Resolution: 1:500
   License: IGCYL-NC
-  Interesting fields (criteria):
-
- Vector data: 
+  Interesting fields (criteria): Land use for both agriculture and livestock, declared by farmers/owners
+  
 Topillo sighting 
   Access: downloadable csv file (not apt for GIS)
   Projection and Resolution: N/A
   License: 
+  Interesting fields: the collection comes from different databases and cannot be opened in GIS in the map, only as an attribute table. 
 
   
