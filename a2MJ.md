@@ -29,7 +29,7 @@ Creating output file that is 635P x 378L.
 Process completed successfully```
 
 ### SEGO CLIP + bioclim  
-``Input parameters:
+```Input parameters:
 { 'ALPHA_BAND' : False, 'CROP_TO_CUTLINE' : True, 'DATA_TYPE' : 0, 'EXTRA' : '', 'INPUT' : 'C:/Users/localuser/Documents/GIS data/worldclim_Data/spainwc2.1_30s_bio_1.tif', 'KEEP_RESOLUTION' : False, 'MASK' : 'C:/Users/localuser/Documents/GIS data/sg_province.gpkg|layername=prov_cyl_recintos', 'MULTITHREADING' : False, 'NODATA' : None, 'OPTIONS' : '', 'OUTPUT' : 'C:/Users/localuser/Documents/GIS data/SG clipped by mask layer.tif', 'SET_RESOLUTION' : False, 'SOURCE_CRS' : None, 'TARGET_CRS' : None, 'TARGET_EXTENT' : None, 'X_RESOLUTION' : None, 'Y_RESOLUTION' : None }
 GDAL command:
 gdalwarp -overwrite -of GTiff -cutline "C:/Users/localuser/Documents/GIS data/sg_province.gpkg" -cl prov_cyl_recintos -crop_to_cutline "C:/Users/localuser/Documents/GIS data/worldclim_Data/spainwc2.1_30s_bio_1.tif" "C:/Users/localuser/Documents/GIS data/SG clipped by mask layer.tif"
