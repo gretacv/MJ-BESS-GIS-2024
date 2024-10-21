@@ -12,10 +12,10 @@ print(instruction) #MISSING INSTRUCTIONS FROM GIS
 
 
 
-### Assignment 2
+# Assignment 2
 
 ## Clipping 
-# Clip raster by mask → bio1 points and sego limit
+### Clip raster by mask → bio1 points and sego limit
 ```Input parameters:
 { 'ALPHA_BAND' : False, 'CROP_TO_CUTLINE' : True, 'DATA_TYPE' : 0, 'EXTRA' : '', 'INPUT' : 'C:/Users/localuser/Documents/GIS data/worldclim_Data/spainwc2.1_30s_bio_1.tif', 'KEEP_RESOLUTION' : False, 'MASK' : 'C:/Users/localuser/Documents/GIS data/prov_cyl_recintos.gpkg|layername=prov_cyl_recintos', 'MULTITHREADING' : False, 'NODATA' : None, 'OPTIONS' : '', 'OUTPUT' : 'TEMPORARY_OUTPUT', 'SET_RESOLUTION' : False, 'SOURCE_CRS' : None, 'TARGET_CRS' : None, 'TARGET_EXTENT' : None, 'X_RESOLUTION' : None, 'Y_RESOLUTION' : None }
 GDAL command:
@@ -28,7 +28,7 @@ Creating output file that is 635P x 378L.
  Processing C:/Users/localuser/Documents/GIS data/worldclim_Data/spainwc2.1_30s_bio_1.tif [1/1] : 0...10...20...30...40...50...60...70...80...90...100 - done.
 Process completed successfully```
 
-# SEGO CLIP + bioclim  
+### SEGO CLIP + bioclim  
 ``Input parameters:
 { 'ALPHA_BAND' : False, 'CROP_TO_CUTLINE' : True, 'DATA_TYPE' : 0, 'EXTRA' : '', 'INPUT' : 'C:/Users/localuser/Documents/GIS data/worldclim_Data/spainwc2.1_30s_bio_1.tif', 'KEEP_RESOLUTION' : False, 'MASK' : 'C:/Users/localuser/Documents/GIS data/sg_province.gpkg|layername=prov_cyl_recintos', 'MULTITHREADING' : False, 'NODATA' : None, 'OPTIONS' : '', 'OUTPUT' : 'C:/Users/localuser/Documents/GIS data/SG clipped by mask layer.tif', 'SET_RESOLUTION' : False, 'SOURCE_CRS' : None, 'TARGET_CRS' : None, 'TARGET_EXTENT' : None, 'X_RESOLUTION' : None, 'Y_RESOLUTION' : None }
 GDAL command:
@@ -43,7 +43,7 @@ Execution completed in 0.27 seconds
 Results:
 {'OUTPUT': 'C:/Users/localuser/Documents/GIS data/SG clipped by mask layer.tif'}```
 
-# Clip vector by mask layer → cattle trails and sego limit
+### Clip vector by mask layer → cattle trails and sego limit
 ```Input parameters:
 { 'INPUT' : 'C:\\Users\\localuser\\Documents\\GIS data\\znie_cyl_vvpp_ejes.gpkg|layername=znie_cyl_vvpp_ejes', 'MASK' : 'C:/Users/localuser/Documents/GIS data/sg_province.gpkg|layername=prov_cyl_recintos', 'OPTIONS' : '', 'OUTPUT' : 'C:/Users/localuser/Documents/GIS data/vias_pecuarias_sego.gpkg' }
 GDAL command:
@@ -56,14 +56,14 @@ Execution completed in 1.06 seconds
 Results:
 {'OUTPUT': 'C:/Users/localuser/Documents/GIS data/vias_pecuarias_sego.gpkg'}```
 
-# Corrected 
+### Corrected 
 ```processing.run("gdal:clipvectorbypolygon", {'INPUT':'C:/Users/localuser/Documents/GIS data/m_arvalis_bio1.gpkg|layername=bio1','MASK':'C:/Users/localuser/Documents/GIS data/sg_province.gpkg|layername=prov_cyl_recintos','OPTIONS':'','OUTPUT':'C:/Users/localuser/Documents/GIS data/SG_bio_clip_V.gpkg'})```
 
 ## Buffers
-# Select within distance → biopoints and rivers
+### Select within distance → biopoints and rivers
 ``` processing.run("native:selectwithindistance", {'INPUT':'C:/Users/localuser/Documents/GIS data/SG_bio_clip_V.gpkg','REFERENCE':'sego_rivers.gpkg|layername=clipped_mask','DISTANCE':10,'METHOD':0})```
 
-# Buffer → cattle trails
+### Buffer → cattle trails
 ```Input parameters:
 { 'DISSOLVE' : False, 'DISTANCE' : 10, 'END_CAP_STYLE' : 0, 'INPUT' : 'C:/Users/localuser/Documents/GIS data/vias_pecuarias_sego.gpkg', 'JOIN_STYLE' : 0, 'MITER_LIMIT' : 2, 'OUTPUT' : 'TEMPORARY_OUTPUT', 'SEGMENTS' : 5, 'SEPARATE_DISJOINT' : False }
 
