@@ -93,11 +93,11 @@ processing.run("native:selectwithindistance", {'INPUT':'C:/Users/localuser/Docum
 ```
 Input parameters:
 { 'DISSOLVE' : False, 'DISTANCE' : 10, 'END_CAP_STYLE' : 0, 'INPUT' : 'C:/Users/localuser/Documents/GIS data/vias_pecuarias_sego.gpkg', 'JOIN_STYLE' : 0, 'MITER_LIMIT' : 2, 'OUTPUT' : 'TEMPORARY_OUTPUT', 'SEGMENTS' : 5, 'SEPARATE_DISJOINT' : False }
-```
 
 Execution completed in 0.36 seconds
 Results:
 {'OUTPUT': 'Buffered_7c7ddb58_0111_4825_9ecf_2e7f5db5f5cd'}
 
 Loading resulting layers
-Algorithm 'Buffer' finished```
+Algorithm 'Buffer' finished
+```
