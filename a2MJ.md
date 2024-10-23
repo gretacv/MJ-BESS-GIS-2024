@@ -41,10 +41,12 @@ Creating output file that is 181P x 114L.
 Process completed successfully
 Execution completed in 0.27 seconds
 Results:
-{'OUTPUT': 'C:/Users/localuser/Documents/GIS data/SG clipped by mask layer.tif'}```
+{'OUTPUT': 'C:/Users/localuser/Documents/GIS data/SG clipped by mask layer.tif'}
+```
 
 ### Clip vector by mask layer → cattle trails and sego limit
-```Input parameters:
+```
+Input parameters:
 { 'INPUT' : 'C:\\Users\\localuser\\Documents\\GIS data\\znie_cyl_vvpp_ejes.gpkg|layername=znie_cyl_vvpp_ejes', 'MASK' : 'C:/Users/localuser/Documents/GIS data/sg_province.gpkg|layername=prov_cyl_recintos', 'OPTIONS' : '', 'OUTPUT' : 'C:/Users/localuser/Documents/GIS data/vias_pecuarias_sego.gpkg' }
 GDAL command:
 ogr2ogr -clipsrc "C:/Users/localuser/Documents/GIS data/sg_province.gpkg" -clipsrclayer prov_cyl_recintos "C:/Users/localuser/Documents/GIS data/vias_pecuarias_sego.gpkg" "C:\\Users\\localuser\\Documents\\GIS data\\znie_cyl_vvpp_ejes.gpkg" znie_cyl_vvpp_ejes -f "GPKG"
@@ -54,14 +56,18 @@ Warning 1: A geometry of type LINESTRING is inserted into layer znie_cyl_vvpp_ej
 Process completed successfully
 Execution completed in 1.06 seconds
 Results:
-{'OUTPUT': 'C:/Users/localuser/Documents/GIS data/vias_pecuarias_sego.gpkg'}```
+{'OUTPUT': 'C:/Users/localuser/Documents/GIS data/vias_pecuarias_sego.gpkg'}
+```
 
 ### Corrected 
-```processing.run("gdal:clipvectorbypolygon", {'INPUT':'C:/Users/localuser/Documents/GIS data/m_arvalis_bio1.gpkg|layername=bio1','MASK':'C:/Users/localuser/Documents/GIS data/sg_province.gpkg|layername=prov_cyl_recintos','OPTIONS':'','OUTPUT':'C:/Users/localuser/Documents/GIS data/SG_bio_clip_V.gpkg'})```
+```
+processing.run("gdal:clipvectorbypolygon", {'INPUT':'C:/Users/localuser/Documents/GIS data/m_arvalis_bio1.gpkg|layername=bio1','MASK':'C:/Users/localuser/Documents/GIS data/sg_province.gpkg|layername=prov_cyl_recintos','OPTIONS':'','OUTPUT':'C:/Users/localuser/Documents/GIS data/SG_bio_clip_V.gpkg'})
+```
 
 
 ### Materia forestal de producción 
-``Input parameters:
+```
+Input parameters:
 { 'INPUT' : '/vsizip/C:\\Users\\localuser\\Downloads\\am.especies_cyl_mfr.zip/am.especies_cyl_mfr.shp|layername=am.especies_cyl_mfr', 'MASK' : 'C:/Users/localuser/Documents/GIS data/sg_province.gpkg|layername=prov_cyl_recintos', 'OPTIONS' : '', 'OUTPUT' : 'C:/Users/localuser/Documents/GIS data/prod_forestal_sego.gpkg' }
 
 GDAL command:
@@ -74,15 +80,20 @@ Results:
 {'OUTPUT': 'C:/Users/localuser/Documents/GIS data/prod_forestal_sego.gpkg'}
 
 Loading resulting layers
-Algorithm 'Clip vector by mask layer' finished```
+Algorithm 'Clip vector by mask layer' finished
+```
 
 ## Buffers
 ### Select within distance → biopoints and rivers
-``` processing.run("native:selectwithindistance", {'INPUT':'C:/Users/localuser/Documents/GIS data/SG_bio_clip_V.gpkg','REFERENCE':'sego_rivers.gpkg|layername=clipped_mask','DISTANCE':10,'METHOD':0})```
+``` 
+processing.run("native:selectwithindistance", {'INPUT':'C:/Users/localuser/Documents/GIS data/SG_bio_clip_V.gpkg','REFERENCE':'sego_rivers.gpkg|layername=clipped_mask','DISTANCE':10,'METHOD':0})
+```
 
 ### Buffer → cattle trails
-```Input parameters:
+```
+Input parameters:
 { 'DISSOLVE' : False, 'DISTANCE' : 10, 'END_CAP_STYLE' : 0, 'INPUT' : 'C:/Users/localuser/Documents/GIS data/vias_pecuarias_sego.gpkg', 'JOIN_STYLE' : 0, 'MITER_LIMIT' : 2, 'OUTPUT' : 'TEMPORARY_OUTPUT', 'SEGMENTS' : 5, 'SEPARATE_DISJOINT' : False }
+```
 
 Execution completed in 0.36 seconds
 Results:
